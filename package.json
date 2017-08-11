@@ -1,0 +1,9 @@
+{
+  "name": "immutablejs-record-memoize",
+  "version": "1.0.0",
+  "description": "Memoize methods of ImmutableJS.Record",
+  "main": "index.js",
+  "repository": "https://github.com/Soreine/immutablejs-record-memoize",
+  "author": "Soreine <soreine.plume@gmail.com>",
+  "license": "MIT"
+}
