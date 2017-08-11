@@ -1,5 +1,7 @@
 # immutablejs-record-memoize
 
+[![npm](https://img.shields.io/npm/v/immutablejs-record-memoize.svg?style=flat-square)](https://www.npmjs.com/package/immutablejs-record-memoize)
+
 Memoize methods or properties of any `ImmutableJS.Record`. Also works on any immutable object prototype.
 
 ## Install
