@@ -19,8 +19,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "babel ./lib --out-dir ./dist",
-    "prepublish": "yarn run build",
+    "prepare": "babel ./lib --out-dir ./dist",
     "lint": "eslint ./",
     "test": "ava"
   },
@@ -38,14 +37,12 @@
     "eslint-config-gitbook": "^1.5.0",
     "eslint-plugin-flowtype": "^2.35.0",
     "flow-bin": "^0.52.0",
-    "immutable": "^3.8.1",
+    "immutable": "^4.0.0-rc.12",
     "sinon": "^3.2.0"
   },
   "ava": {
     "require": "babel-register",
     "babel": "inherit"
   },
-  "dependencies": {
-    "es6-map": "^0.1.5"
-  }
+  "dependencies": {}
 }
