@@ -27,11 +27,7 @@ class ExampleRecord extends Record({}) {
     }
 }
 
-// Memoize methods with no arguments
-memoize(ExampleRecord.prototype, ['noArguments'], { takesArguments: false });
-
-// Memoize methods that have arguments
-memoize(ExampleObject.prototype, ['withArguments'], { takesArguments: true });
+memoize(ExampleRecord.prototype, ['noArguments', 'withArguments']);
 
 // Use ExampleRecord as usual
 ```
@@ -58,10 +54,7 @@ ExampleObject.prototype = {
 };
 
 // Memoize methods with no arguments
-memoize(ExampleObject.prototype, ['noArguments'], { takesArguments: false });
-
-// Memoize methods that have arguments
-memoize(ExampleObject.prototype, ['withArguments'], { takesArguments: true });
+memoize(ExampleObject.prototype, ['noArguments', 'withArguments']);
 
 // Use ExampleObject as usual
 ```
@@ -78,8 +71,6 @@ Arguments:
   The object prototype that should have its properties memoized.
 - `properties: string[]`
   The list of properties names that should be memoized
-- `options.takesArguments?: boolean`
-  True if the methods in `properties` take arguments. This result in slower memoization for them.
 
 Returns: `void`
 
@@ -88,3 +79,7 @@ Returns: `void`
 
 Implementation is taken from Slate.
 https://github.com/ianstormtaylor/slate/blob/master/src/utils/memoize.js
+
+Thank you to:
+
+- [@zhujinxuan](https://github.com/zhujinxuan)
